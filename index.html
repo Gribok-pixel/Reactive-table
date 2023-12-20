@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Reactive TABLE</title>
+</head>
+<body>
+
+    <div class="get-data">
+        <button class="small">Мини</button>
+        <button class="big">Всё</button>
+    </div>
+
+    <div class="info-card">
+        <h2>Информация:</h2>
+        <ul class="info-card-data">
+            
+        </ul>
+    </div>
+
+    <div class="addData">
+        <input class="add-input" type="number" placeholder="ID">
+        <input class="add-input" type="text" placeholder="Name">
+        <input class="add-input" type="text" placeholder="Surname">
+        <input class="add-input" type="email" placeholder="E-mail">
+        <input class="add-input" type="tel" placeholder="phone">
+        <input class="submit" type="button" value="Добавить">
+    </div>
+
+    <div class="search-box">
+        <input type="text" class="search" placeholder="Поиск">
+        <button class="search-btn"><i class="bi bi-search" style="font-size: 1.3rem; color: rgb(212, 0, 255);"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="table-title">
+            <div class="line-title">
+                <div class="title id-title" id="id">
+                    ID 
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <div class="title name-title" id="firstName">
+                    NAME
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <div class="title last-name-title" id="lastName">
+                    SURNAME
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <div class="title email-title" id="email">
+                    E-MAIL
+                    <i class="bi bi-caret-down"></i>
+                </div>
+                <div class="title phone-title" id="phone">
+                    PHONE
+                    <i class="bi bi-caret-down"></i>
+                </div>
+           </div>
+        </div>
+
+        <div class="table">
+        
+        </div>
+    </div>
+
+    <div class="pagination">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
